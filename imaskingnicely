@@ -719,7 +719,7 @@
                  self("loadConfig")
              else
                  if self.menu.open then
-                     if Input.KeyCode == Enum.KeyCode.KeypadEight then
+                     if Input.KeyCode == Enum.KeyCode.F1 then
                          local indexCurrent = find(framework.menu.list, framework.menu.currentItem)
                          if indexCurrent then
                              if framework.menu.list[indexCurrent-1] ~= nil then
@@ -729,7 +729,7 @@
                              end
                          end
                      end
-                     if Input.KeyCode == Enum.KeyCode.KeypadTwo then
+                     if Input.KeyCode == Enum.KeyCode.F2 then
                          local indexCurrent = find(framework.menu.list, framework.menu.currentItem)
                          if indexCurrent then
                              if framework.menu.list[indexCurrent+1] ~= nil then
@@ -739,7 +739,7 @@
                              end
                          end
                      end
-                     if Input.KeyCode == Enum.KeyCode.KeypadSix then
+                     if Input.KeyCode == Enum.KeyCode.F3 then
                          if self.menu.currentItem.type ~= "label" then
                              if self.menu.currentItem.type == "int" then
                                  self.menu.currentItem:offset({offset = self.menu.currentItem.precision})
@@ -761,7 +761,7 @@
                              end
                          end
                      end 
-                     if Input.KeyCode == Enum.KeyCode.KeypadFour then
+                     if Input.KeyCode == Enum.KeyCode.F4 then
                          if self.menu.currentItem.type ~= "label" then
                              if self.menu.currentItem.type == "int" then
                                  self.menu.currentItem:offset({offset = -self.menu.currentItem.precision})
