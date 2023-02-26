@@ -1434,7 +1434,7 @@
  local ignoreFOVToggle = window:createToggle({text = "Ignore FOV", flag = "aimbotIgnoreFOV"})
  local methodList = window:createList({text = "Method", default = "Mouse", list = {"Mouse", "Distance", "Health"}, flag = "aimbotMethod"})
  local dontLockToggle = window:createToggle({text = "Don't Lock when Right Click", flag = "aimbotNoLock"})
- local cursorCalibrationKey = window:createKeybind({text = "Cursor Calibration Key", defaultKey = Enum.KeyCode.F1, flag = "cursorCalibrationKey", callback = function(tbl)
+ local cursorCalibrationKey = window:createKeybind({text = "Cursor Calibration Key", defaultKey = Enum.KeyCode.F6, flag = "cursorCalibrationKey", callback = function(tbl)
      if not tbl.state then
          local mousePosition = functions["GetMouseLocation"](UserInputService)
          if functions["type"](client.offsetVisualizer) == 'table' and functions["rawget"](client.offsetVisualizer, '__OBJECT_EXISTS') then
@@ -1492,7 +1492,7 @@
          end 
      end
  end})
- local clickTpOnKey = window:createKeybind({text = "Click Tp", defaultKey = Enum.KeyCode.F3, flag = "tpKey", callback = function(tbl) -- Exploits
+ local clickTpOnKey = window:createKeybind({text = "Click Tp", defaultKey = Enum.KeyCode.F9, flag = "tpKey", callback = function(tbl) -- Exploits
      if localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart") and mouse.Hit then
          localPlayer.Character.HumanoidRootPart.CFrame = functions["nCFrame"](mouse.Hit.p.X, mouse.Hit.p.Y, mouse.Hit.p.Z)
      end
