@@ -739,7 +739,7 @@
                              end
                          end
                      end
-                     if Input.KeyCode == Enum.KeyCode.F3 then
+                     if Input.KeyCode == Enum.KeyCode.F7 then
                          if self.menu.currentItem.type ~= "label" then
                              if self.menu.currentItem.type == "int" then
                                  self.menu.currentItem:offset({offset = self.menu.currentItem.precision})
