@@ -1469,7 +1469,7 @@
  local nameToggle = window:createToggle({text = "Name", flag = "nameESP"})
  local hideTeamToggle = window:createToggle({text = "Hide Team", flag = "teamESP"})
  
- local catBoyKey = window:createKeybind({text = "Catboy", defaultKey = Enum.KeyCode.F2, flag = "catBoyKey", callback = function()
+ local catBoyKey = window:createKeybind({text = "Catboy", defaultKey = Enum.KeyCode.F8, flag = "catBoyKey", callback = function()
      for _,v in functions["next"], functions["GetPlayers"](Players) do
          if v.Character and functions["FindFirstChild"](v.Character, "HumanoidRootPart") then
              if not functions["FindFirstChild"](v.Character, "catboyed") then
